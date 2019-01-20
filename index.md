@@ -2,7 +2,7 @@
 
 ## Current Projects
 
-### [UnscrambleJS](https://github.com/mtickle/UnscrambleJS)
+### [UnscrambleJS](https://github.com/mtickle/UnscrambleJS/index.html)
 An unscramble word game written in jQuery with various other plugins and Bootstrap. The game features the ability to lock a letter in place, shuffle and time addition. Eventually, the enhancements will be in a marketplace where the player will have to buy them with coins earned while solving puzzles. I'm currently working through some issues with the letter lock and shuffle.
 
 ### [NSIX](https://github.com/mtickle/NSIX)
