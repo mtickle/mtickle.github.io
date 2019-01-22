@@ -14,4 +14,4 @@ Demonstration, using jQuery, of displaying a random verse from Proverbs. While I
 <br />
 <br />
 
-<a href="https://twitter.com/theMikeTickle?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @mike_tickle</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<a href="https://twitter.com/theMikeTickle?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @themiketickle</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
