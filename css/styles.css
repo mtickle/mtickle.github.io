@@ -199,6 +199,20 @@ footer {
 .shadow-large {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08), 0 3px 6px rgba(0, 0, 0, 0.15);
 }
+.family-pic {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08), 0 3px 6px rgba(0, 0, 0, 0.15);
+  border-radius: 10%;
+  width: 600px;
+  margin: auto;
+  display: block;
+  text-align: center;
+}
+figcaption {
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  color: #74808a;
+  text-align: center;
+}
 .about-heading {
     position: relative;
     display: inline-block;
