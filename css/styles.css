@@ -10,6 +10,37 @@
     that don't come from third party libraries. This file gets compiled using
     Gulp and send to the /css folder which is then loaded on the page.
 */
+/*
+    File Contents:
+
+        1. Variables
+        2. Mixins
+        3. Global Styles
+        4. Lead Styles
+        5. About Styles
+        6. Experience Styles
+        7. Education Styles
+        8. Project Styles
+        9. Skills Styles
+        10. Contact Styles
+        11. Optional Section Styles
+        12. Media Queries
+*/
+/*
+    ------------------------
+    ----- 1. Variables -----
+    ------------------------
+*/
+/*
+    ---------------------
+    ----- 2. Mixins -----
+    ---------------------
+*/
+/*
+    ----------------------------
+    ----- 3. Global Styles -----
+    ----------------------------
+*/
 body {
   font-family: "Lato", sans-serif;
   font-size: 16px;
@@ -18,6 +49,7 @@ body.active {
   overflow: hidden;
   z-index: -1;
 }
+
 .no-js #experience-timeline > div {
   background: #fff;
   padding: 10px;
@@ -42,10 +74,10 @@ body.active {
   font-size: 0.9em;
   margin: 0;
 }
-.no-js #experience-timeline:before,
-.no-js #experience-timeline:after {
+.no-js #experience-timeline:before, .no-js #experience-timeline:after {
   content: none;
 }
+
 @keyframes dropHeader {
   0% {
     transform: translateY(-100%);
@@ -84,7 +116,7 @@ header a {
   padding: 10px;
 }
 header a:hover {
-  color: #217dbb;
+  color: rgb(52, 179.8333333333, 219);
   text-decoration: none;
   background: #eee;
   border-radius: 4px;
@@ -100,9 +132,11 @@ header.sticky {
   position: fixed;
   z-index: 999;
 }
+
 #menu.active {
   display: block;
 }
+
 #mobile-menu-open {
   display: none;
   cursor: pointer;
@@ -116,6 +150,7 @@ header.sticky {
   border-radius: 4px;
   background: #fff;
 }
+
 #mobile-menu-close {
   display: none;
   text-align: right;
@@ -134,9 +169,11 @@ header.sticky {
 #mobile-menu-close i {
   vertical-align: middle;
 }
+
 footer {
   padding: 50px 0;
 }
+
 .copyright {
   padding-top: 20px;
 }
@@ -144,6 +181,7 @@ footer {
   margin: 0;
   color: #74808a;
 }
+
 .top {
   text-align: center;
 }
@@ -154,12 +192,13 @@ footer {
   width: 35px;
   height: 35px;
   border-radius: 50%;
-  border: 3px solid #b9bfc4;
+  border: 3px solid rgb(185.1850393701, 191.2559055118, 196.3149606299);
   text-align: center;
 }
 .top i {
   color: #74808a;
 }
+
 .social {
   text-align: right;
 }
@@ -180,6 +219,7 @@ footer {
 .social a:hover {
   color: #3498db;
 }
+
 .btn-rounded-white {
   display: inline-block;
   color: #fff;
@@ -193,44 +233,15 @@ footer {
   background: #fff;
   text-decoration: none;
 }
+
 .shadow {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
+
 .shadow-large {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08), 0 3px 6px rgba(0, 0, 0, 0.15);
 }
-.family-pic {
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08), 0 3px 6px rgba(0, 0, 0, 0.15);
-  border-radius: 10%;
-  width: 600px;
-  margin: auto;
-  display: block;
-  text-align: center;
-}
-figcaption {
-  font-family: 'Lato', sans-serif;
-  font-size: 14px;
-  color: #74808a;
-  text-align: center;
-}
-.about-heading {
-    position: relative;
-    display: inline-block;
-    font-size: 2em;
-    font-weight: 300;
-    margin: 0 0 30px 0;
-  }
-  .about-heading:after {
-    position: absolute;
-    content: "";
-    top: 100%;
-    height: 1px;
-    width: 100px;
-    left: 0;
-    right: 0;
-    margin: 0 0;
-    background: #3498db;
-  }
+
 .heading {
   position: relative;
   display: inline-block;
@@ -243,18 +254,25 @@ figcaption {
   content: "";
   top: 100%;
   height: 1px;
-  width: 100px;
+  width: 50px;
   left: 0;
   right: 0;
   margin: 0 auto;
   background: #3498db;
 }
+
 .background-alt {
   background: #f2f2f5;
 }
+
+/*
+    --------------------------
+    ----- 4. Lead Styles -----
+    --------------------------
+*/
 #lead {
   position: relative;
-  height: 100vh;
+  height: 50vh;
   min-height: 500px;
   max-height: 1080px;
   background: url(../images/lead-bg.jpg);
@@ -262,6 +280,7 @@ figcaption {
   padding: 15px;
   overflow: hidden;
 }
+
 #lead-content {
   position: absolute;
   z-index: 10;
@@ -270,12 +289,11 @@ figcaption {
   transform: translate(-50%, -50%);
   text-align: center;
 }
-#lead-content h1,
-#lead-content h2 {
+#lead-content h1, #lead-content h2 {
   margin: 0;
 }
 #lead-content h1 {
-  color: #fff;
+  color: #ffffff;
   font-weight: 900;
   font-size: 5em;
   text-transform: uppercase;
@@ -283,11 +301,12 @@ figcaption {
   line-height: 0.9em;
 }
 #lead-content h2 {
-  color: #a0cfee;
+  color: rgb(21.6150627615, 81.6569037657, 121.8849372385);
   font-weight: 500;
   font-size: 2.25em;
   margin-bottom: 15px;
 }
+
 #lead-overlay {
   position: absolute;
   height: 100%;
@@ -296,9 +315,10 @@ figcaption {
   right: 0;
   bottom: 0;
   left: 0;
-  background: rgba(33, 125, 187, 0.8);
+  background: rgba(52, 179.8333333333, 219, 0.8);
   z-index: 1;
 }
+
 #lead-down {
   position: absolute;
   left: 0;
@@ -316,14 +336,15 @@ figcaption {
   width: 35px;
   height: 35px;
   border-radius: 50%;
-  border: 3px solid #a0cfee;
+  border: 3px solid rgb(160.2949790795, 206.9476987448, 238.2050209205);
   text-align: center;
 }
 #lead-down i {
-  animation: pulsate 1.5s ease;
+  animation: pulsate 0.5s ease;
   animation-iteration-count: infinite;
   padding-top: 5px;
 }
+
 @keyframes pulsate {
   0% {
     transform: scale(1, 1);
@@ -335,6 +356,27 @@ figcaption {
     transform: scale(1, 1);
   }
 }
+.family-pic {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08), 0 3px 6px rgba(0, 0, 0, 0.15);
+  border-radius: 10%;
+  width: 600px;
+  margin: auto;
+  display: block;
+  text-align: center;
+}
+
+figcaption {
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  color: #74808a;
+  text-align: center;
+}
+
+/*
+    ---------------------------
+    ----- 5. About Styles -----
+    ---------------------------
+*/
 #about {
   padding: 75px 15px;
   border-bottom: 1px solid #dcd9d9;
@@ -346,6 +388,12 @@ figcaption {
   color: #74808a;
   margin: 0;
 }
+
+/*
+    --------------------------------
+    ----- 6. Experience Styles -----
+    --------------------------------
+*/
 #experience {
   padding: 50px 15px;
   text-align: center;
@@ -354,6 +402,7 @@ figcaption {
 #experience h2 {
   color: #374054;
 }
+
 #experience-timeline {
   margin: 30px auto 0 auto;
   position: relative;
@@ -381,6 +430,7 @@ figcaption {
   top: 100%;
   left: 303px;
 }
+
 .vtimeline-content {
   margin-left: 350px;
   background: #fff;
@@ -407,12 +457,14 @@ figcaption {
   font-size: 0.9em;
   margin: 0;
 }
+
 .vtimeline-point {
   position: relative;
   display: block;
   vertical-align: top;
   margin-bottom: 30px;
 }
+
 .vtimeline-icon {
   position: relative;
   color: #fff;
@@ -429,6 +481,7 @@ figcaption {
   font-size: 2em;
   margin-top: 10px;
 }
+
 .vtimeline-date {
   width: 260px;
   text-align: right;
@@ -438,6 +491,12 @@ figcaption {
   font-weight: 300;
   color: #374054;
 }
+
+/*
+    -------------------------------
+    ----- 7. Education Styles -----
+    -------------------------------
+*/
 #education {
   padding: 50px 15px 20px 15px;
   border-bottom: 1px solid #dcd9d9;
@@ -447,6 +506,7 @@ figcaption {
   color: #374054;
   margin-bottom: 50px;
 }
+
 .education-block {
   max-width: 700px;
   margin: 0 auto 30px auto;
@@ -470,8 +530,7 @@ figcaption {
   font-weight: 500;
   margin: 0 0 15px 0;
 }
-.education-block p,
-.education-block ul {
+.education-block p, .education-block ul {
   margin: 0;
   color: #74808a;
   font-size: 0.9em;
@@ -479,16 +538,22 @@ figcaption {
 .education-block ul {
   padding: 0 0 0 15px;
 }
+
+/*
+    -------------------------------
+    ----- 8. Project Styles -----
+    -------------------------------
+*/
 #projects {
   padding: 50px 15px;
   border-bottom: 1px solid #dcd9d9;
   text-align: center;
-  background: #f2f2f5;
 }
 #projects h2 {
   color: #374054;
   margin-bottom: 50px;
 }
+
 .project {
   position: relative;
   max-width: 900px;
@@ -497,9 +562,11 @@ figcaption {
   background: #fff;
   border-radius: 4px;
 }
+
 .project-image {
   float: left;
 }
+
 .project-info {
   position: absolute;
   top: 50%;
@@ -518,15 +585,23 @@ figcaption {
   margin: 0 0 15px 0;
   font-size: 0.9em;
 }
+
 .no-image .project-info {
   position: relative;
   margin: 0;
   padding: 30px 15px;
   transform: none;
 }
+
 #more-projects {
   display: none;
 }
+
+/*
+    -------------------------------
+    ----- 9. Skills Styles -----
+    -------------------------------
+*/
 #skills {
   padding: 50px 15px;
   text-align: center;
@@ -546,11 +621,17 @@ figcaption {
   margin: 7px;
   padding: 5px 10px;
   color: #374054;
-  background: #e4e4ea;
+  background: rgb(36.9790794979, 139.6987447699, 208.5209205021);
   list-style: none;
   cursor: default;
   font-size: 1.2em;
 }
+
+/*
+    -------------------------------
+    ----- 10. Contact Styles -----
+    -------------------------------
+*/
 #contact {
   padding: 50px 15px;
   background: #3498db;
@@ -561,44 +642,39 @@ figcaption {
   color: #fff;
   font-weight: 500;
 }
+
 #contact-form {
   max-width: 500px;
   margin: 0 auto;
 }
-#contact-form input,
-#contact-form textarea {
+#contact-form input, #contact-form textarea {
   display: block;
   width: 100%;
   padding: 10px;
   border-radius: 4px;
   border: none;
   margin-bottom: 10px;
-  background: #1d6fa5;
+  background: rgb(29.2970711297, 110.6778242678, 165.2029288703);
   color: #fff;
   transition: 0.5s ease all;
 }
-#contact-form input::-webkit-input-placeholder,
-#contact-form textarea::-webkit-input-placeholder {
+#contact-form input::-webkit-input-placeholder, #contact-form textarea::-webkit-input-placeholder {
   color: #fff;
 }
-#contact-form input:-moz-placeholder,
-#contact-form textarea:-moz-placeholder {
+#contact-form input:-moz-placeholder, #contact-form textarea:-moz-placeholder {
   color: #fff;
   opacity: 1;
 }
-#contact-form input::-moz-placeholder,
-#contact-form textarea::-moz-placeholder {
+#contact-form input::-moz-placeholder, #contact-form textarea::-moz-placeholder {
   color: #fff;
   opacity: 1;
 }
-#contact-form input:-ms-input-placeholder,
-#contact-form textarea:-ms-input-placeholder {
+#contact-form input:-ms-input-placeholder, #contact-form textarea:-ms-input-placeholder {
   color: #fff;
 }
-#contact-form input:focus,
-#contact-form textarea:focus {
+#contact-form input:focus, #contact-form textarea:focus {
   outline: none;
-  background: #16527a;
+  background: rgb(21.6150627615, 81.6569037657, 121.8849372385);
 }
 #contact-form textarea {
   height: 150px;
@@ -619,6 +695,12 @@ figcaption {
 #contact-form button:hover {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
+
+/*
+    ---------------------------------------
+    ----- 11. Optional Section Styles -----
+    ---------------------------------------
+*/
 .optional-section {
   padding: 50px 15px;
   text-align: center;
@@ -627,6 +709,7 @@ figcaption {
 .optional-section h2 {
   color: #374054;
 }
+
 .optional-section-block {
   max-width: 700px;
   margin: 0 auto 30px auto;
@@ -646,8 +729,7 @@ figcaption {
   font-weight: 500;
   margin: 0 0 15px 0;
 }
-.optional-section-block p,
-.optional-section-block ul {
+.optional-section-block p, .optional-section-block ul {
   margin: 0 0 15px 0;
   color: #74808a;
   font-size: 0.9em;
@@ -655,9 +737,14 @@ figcaption {
 .optional-section-block ul {
   padding: 0 0 0 15px;
 }
+
+/*
+    -----------------------------
+    ----- 12. Media Queries -----
+    -----------------------------
+*/
 @media only screen and (max-width: 750px) {
-  #experience-timeline:before,
-  #experience-timeline:after {
+  #experience-timeline:before, #experience-timeline:after {
     left: 23px;
   }
   .vtimeline-date {
@@ -710,8 +797,7 @@ figcaption {
     bottom: 0;
     height: 100%;
   }
-  #mobile-menu-open,
-  #mobile-menu-close {
+  #mobile-menu-open, #mobile-menu-close {
     display: block;
   }
   #menu {
@@ -737,8 +823,7 @@ figcaption {
   #lead-down {
     display: none;
   }
-  .education-block h3,
-  .education-block span {
+  .education-block h3, .education-block span {
     float: none;
   }
   .project-image {
