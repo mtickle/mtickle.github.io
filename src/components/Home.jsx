@@ -9,10 +9,10 @@ function Home() {
                 className="profile-family-pic" // New class for wider image
             />
             <p className="image-caption">
-                <strong>Achievement Unlocked:</strong> Caleb, Alison, Piper, Peyton, and myself exploring
+                <strong>Achievement Unlocked!</strong> Caleb, Alison, Piper, Peyton, and myself exploring
                 Star Wars: Galaxy's Edge in Disney's Hollywood Studios in our "Batuu Bounding" outfits.
             </p>
-            
+
             <div className="home-layout">
                 <div className="about-text">
                     <h2>About Me</h2>
@@ -51,7 +51,7 @@ function Home() {
                         the Forza Horizon series.
                     </p>
                 </div>
-               
+
             </div>
         </section>
     );
