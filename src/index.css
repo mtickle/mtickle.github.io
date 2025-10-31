@@ -1,68 +1,228 @@
-:root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+/* Reset and Base Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f7f6;
+  color: #333;
+}
+
+/* Main App Container */
+.app-container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* --- Header & Nav --- */
+.header {
+  padding: 20px 0;
+  border-bottom: 2px solid #eee;
   display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+.header h1 {
+  font-size: 2rem;
+  color: #2c3e50;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
+.nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #3498db;
   font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
+.nav a:hover {
+  text-decoration: underline;
+}
+
+/* --- Base Card Styling --- */
+.card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  padding: 28px;
+  margin-bottom: 30px;
+}
+
+.card h2 {
+  font-size: 1.8rem;
+  color: #2c3e50;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+}
+
+.card p {
+  margin-bottom: 15px;
+  line-height: 1.7;
+}
+
+/* --- Home Component --- */
+.home-layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+
+@media (min-width: 768px) {
+  .home-layout {
+    grid-template-columns: 1fr; /* <-- THIS IS THE FIX */
   }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+}
+
+.profile-pic {
+  width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* --- Experience Component --- */
+.job {
+  margin-bottom: 25px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.job:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.job-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.job-company {
+  font-size: 1.1rem;
+  color: #3498db;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.job-dates {
+  font-size: 0.9rem;
+  color: #777;
+  font-style: italic;
+  margin-bottom: 15px;
+}
+
+.job ul {
+  list-style-position: inside;
+  padding-left: 10px;
+}
+
+.job li {
+  margin-bottom: 10px;
+}
+
+.experience-intro {
+  font-style: italic;
+  color: #555;
+  margin-bottom: 25px;
+  font-size: 1.05rem;
+}
+
+.job-subtitle {
+  display: block;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #333;
+  margin-top: 15px;
+  margin-bottom: 8px;
+}
+
+.linkedin-cta {
+  text-align: center;
+  margin-top: 30px;
+  padding-top: 30px;
+  border-top: 1px solid #f0f0f0;
+}
+
+.linkedin-button {
+  display: inline-block;
+  background-color: #0077b5; /* LinkedIn Blue */
+  color: #ffffff;
+  padding: 12px 20px;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 5px;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.linkedin-button:hover {
+  background-color: #005582;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* --- Portfolio Component --- */
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.portfolio-item {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.portfolio-item h3 {
+  color: #3498db;
+  margin-bottom: 10px;
+}
+
+/* --- Footer --- */
+.footer {
+  text-align: center;
+  padding: 30px 0;
+  margin-top: 40px;
+  border-top: 2px solid #eee;
+  color: #888;
+}
+
+.footer a {
+  color: #3498db;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.profile-family-pic {
+  width: calc(
+    100% + 56px
+  ); /* 100% of parent + padding (28px left + 28px right) */
+  margin: -28px -28px 20px -28px; /* Negative margin to span full width of card, adjust bottom margin as needed */
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  object-fit: cover;
+  height: auto; /* Maintain aspect ratio */
+  max-height: 400px; /* Optional: limit height to prevent it from being too tall */
+  object-position: 50% 10%;
+}
+
+.image-caption {
+  font-size: 0.95rem;
+  color: #666;
+  text-align: center;
+  margin-bottom: 25px; /* Space between caption and "About Me" heading */
 }
