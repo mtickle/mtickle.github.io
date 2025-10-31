@@ -13,8 +13,6 @@ function CommunityService() {
             {/* Deacon */}
             <div className="job">
                 <div className="job-title">Deacon</div>
-                <div className="job-company">Wendell Baptist Church</div>
-                <div className="job-dates">Three-Year Term</div>
                 <p>
                     As a Deacon, I am entrusted with the spiritual stewardship of
                     several families within our congregation. This is a role of pure
@@ -34,8 +32,6 @@ function CommunityService() {
             {/* Youth Team Leader */}
             <div className="job">
                 <div className="job-title">Youth Team Leader</div>
-                <div className="job-company">Wendell Baptist Church</div>
-                <div className="job-dates">Ongoing Service</div>
                 <p>
                     Serving as a Youth Team Leader, I mentor both middle school boys
                     and high school students weekly. My role involves leading small
@@ -54,8 +50,6 @@ function CommunityService() {
             {/* Praise Team Member */}
             <div className="job">
                 <div className="job-title">Praise Team Member & Musician</div>
-                <div className="job-company">Wendell Baptist Church</div>
-                <div className="job-dates">Ongoing Service</div>
                 <p>
                     On the Praise Team, I play keyboards for weekly services and
                     rehearsals. My contribution extends beyond performing; I also

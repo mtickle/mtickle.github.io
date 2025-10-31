@@ -38,7 +38,7 @@ function Experience() {
             {/* JAGGAER */}
             <div className="job">
                 <div className="job-title">Manager, Product Development</div>
-                <div className="job-company">JAGGAER</div>
+                <div className="job-company">JAGGAER (formerly SciQuest)</div>
                 <div className="job-dates">May 2012 - Dec 2016 (4 yrs 8 mos)</div>
                 <p>
                     My four-and-a-half-year tenure at JAGGAER was a story of rapid
@@ -93,7 +93,7 @@ function Experience() {
                     earlier roles, please visit my full profile on LinkedIn.
                 </p>
                 <a
-                    href="https://www.linkedin.com/in/your-profile-url" // <-- Add your LinkedIn URL
+                    href="https://www.linkedin.com/in/miketickle/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="linkedin-button"
