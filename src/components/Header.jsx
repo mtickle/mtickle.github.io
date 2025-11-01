@@ -9,6 +9,7 @@ function Header() {
                 <a href="#community">Community Service</a>
                 <a href="#military">Military Service</a>
                 <a href="#portfolio">Portfolio</a>
+                <a href="#music">Music</a> {/* <-- ADD THIS LINK */}
             </nav>
         </header>
     );

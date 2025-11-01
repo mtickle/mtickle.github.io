@@ -4,6 +4,7 @@ import Footer from './components/Footer';
 import Header from './components/Header';
 import Home from './components/Home';
 import MilitaryService from './components/MilitaryService';
+import Music from './components/Music';
 import Portfolio from './components/Portfolio';
 import './index.css';
 
@@ -17,6 +18,7 @@ function App() {
         <CommunityService />
         <MilitaryService />
         <Portfolio />
+        <Music />
       </main>
       <Footer />
     </div>
