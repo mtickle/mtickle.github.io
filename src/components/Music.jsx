@@ -14,8 +14,15 @@ const tracks = [
     bandcampUrl: 'https://miketickle.bandcamp.com/track/102-synthwave-demo-in-b',
     title: '102 - Synthwave Demo in B by Mike Tickle',
   },
+  {
+    embedSrc:
+      'https://bandcamp.com/EmbeddedPlayer/track=1576853904/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/',
+    bandcampUrl: 'https://miketickle.bandcamp.com/track/012-shoegaze-song-in-b-at-145-bpm',
+    title: '012 - Shoegaze Song in B at 145 BPM by Mike Tickle',
+  },
 
 ];
+
 
 
 function Music() {
