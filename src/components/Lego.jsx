@@ -1,5 +1,6 @@
 import Papa from 'papaparse';
 import { useEffect, useState } from 'react';
+import NoImagePlaceholder from '../assets/no-lego-image.jpg';
 
 function LegoCollection() {
     // --- 1. SET THE DEFAULT FILTER ---
@@ -73,9 +74,11 @@ function LegoCollection() {
     const LegoSetCard = ({ set }) => (
         <div className="game-card">
             <img
-                src={set.imageUrl}
+                // Use backticks `` and combine 'setNumber' and 'variant'
+                src={`https://cdn.rebrickable.com/media/sets/${set.setNumber}-${set.variant}.jpg`}
                 alt={set.name}
                 className="game-card-image"
+                onError={(e) => { e.target.src = NoImagePlaceholder; }}
             />
             <div className="game-card-content">
                 <h3>{set.name}</h3>

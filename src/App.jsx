@@ -3,7 +3,6 @@ import Experience from './components/Experience';
 import Footer from './components/Footer';
 import Header from './components/Header';
 import Home from './components/Home';
-import LegoCollection from './components/Lego';
 import MilitaryService from './components/MilitaryService';
 import Music from './components/Music';
 import Portfolio from './components/Portfolio';
@@ -20,7 +19,7 @@ function App() {
         <MilitaryService />
         <Portfolio />
         <Music />
-        <LegoCollection />
+
       </main>
       <Footer />
     </div>
