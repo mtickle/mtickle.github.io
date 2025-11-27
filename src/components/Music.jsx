@@ -21,9 +21,14 @@ const tracks = [
     title: '012 - Shoegaze Song in B at 145 BPM by Mike Tickle',
   },
 
+  {
+    embedSrc:
+      'https://bandcamp.com/EmbeddedPlayer/track=3033457374/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/',
+    bandcampUrl: 'https://miketickle.bandcamp.com/track/006-upbeat-song-in-e-at-135-bpm',
+    title: '006 - Upbeat Song in E at 135 BPM by Mike Tickle',
+  },
+
 ];
-
-
 
 function Music() {
   return (

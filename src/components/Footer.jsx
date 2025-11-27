@@ -4,7 +4,7 @@ function Footer() {
         <footer className="footer">
             <p>
                 <a
-                    href="https://www.linkedin.com/in/your-profile-url" // <-- ADD YOUR LINKEDIN URL
+                    href="https://www.linkedin.com/in/miketickle/" // <-- ADD YOUR LINKEDIN URL
                     target="_blank"
                     rel="noopener noreferrer"
                 >
