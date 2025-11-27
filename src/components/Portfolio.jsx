@@ -6,6 +6,7 @@ import diceGameImage from '../assets/dice-game.png';
 import displayPanelImage from '../assets/display-panel.png';
 import midiAppImage from '../assets/midi-app.png';
 import patrolXImage from '../assets/patrolx.png';
+import pianoChordFinderImage from '../assets/piano-chord-finder.png';
 import spaceGameImage from '../assets/space-game.png';
 import ticTacToeImage from '../assets/tic-tac-toe-game.png';
 import vinDecoderImage from '../assets/vin-decoder.png';
@@ -93,6 +94,15 @@ const games = [
     imageAlt: 'A screenshot of the MIDI app',
     playUrl: 'https://mtickle.github.io/midi-app/',
     buttonText: 'Connect & Play',
+  },
+  {
+    title: 'Piano Chord Finder',
+    category: 'music',
+    description: 'A quick reference for piano chords. Pick a root note from the selector, or press the root note key.',
+    imageUrl: pianoChordFinderImage,
+    imageAlt: 'A screenshot of the piano chord app',
+    playUrl: 'https://mtickle.github.io/piano-chord-finder/',
+    buttonText: 'What is a Bbm7sus4 anyway?',
   },
 ];
 
