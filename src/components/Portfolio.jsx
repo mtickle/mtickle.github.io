@@ -14,6 +14,7 @@ import vinDecoderImage from '../assets/vin-decoder.png';
 
 const games = [
 
+
   {
     title: 'VIN Decoder',
     category: 'tools',
@@ -108,9 +109,9 @@ const games = [
 
 const categories = [
 
+  { id: 'music', title: 'Music Utilities' },
   { id: 'space', title: 'Space & Visuals' },
   { id: 'ai', title: 'AI Game Labs' },
-  { id: 'music', title: 'Music Utilities' },
   { id: 'tools', title: 'Public Facing Tools' },
 ];
 
