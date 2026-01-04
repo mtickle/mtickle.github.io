@@ -18,7 +18,7 @@ const games = [
   {
     title: 'VIN Decoder',
     category: 'tools',
-    description: 'Enter a VIN to decode it. This tool provides detailed information about vehicles based on their VIN.',
+    description: 'Enter a VIN to decode it. This tool provides detailed information about vehicles based on their VIN. Sample VIN: 1C4RJFBM2GC306164',
     imageUrl: vinDecoderImage,
     imageAlt: 'A screenshot of the VIN Decoder',
     playUrl: 'https://mtickle.github.io/vin-app/',
